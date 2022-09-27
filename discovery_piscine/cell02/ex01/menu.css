@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190322-ham-sandwich-horizontal-1553721016.png");
+}
+
+label {
+    color: white;
+    font-size: 30px;
+}
+
+.dropdown {
+    position: relative;
+    text-align: center;
+    margin-top: 50%;
+}
