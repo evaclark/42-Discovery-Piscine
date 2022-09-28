@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Balloon 🎈</title>
+    <style>
+        .balloon {
+            margin: 50%; 
+            border-radius: 100%
+        }
+    </style>
+</head>
+<body onload="onload()">
+    <div class="balloon" id="balloon" onclick="inflate()" style="width: 200px; height: 200px"></div> 
+    <script>
+        const element = document.getElementById("balloon");
+        
+        element.addEventListener('mouseleave', (event) => {
+            deflate();
+        })
+        function onload() {
+            element.style.backgroundColor = "red"
+        }
+        function change_colour() {
+            if (element.style.backgroundColor == "red")
+            {
+                element.style.backgroundColor = "green";
+            }
+            else if (element.style.backgroundColor == "green")
+            {
+                element.style.backgroundColor = "blue";
+            }
+            else if (element.style.backgroundColor == "blue")
+            {
+                element.style.backgroundColor = "red";
+            }
+        }
+        function inflate() {
+            var n = parseInt(document.getElementById("balloon").style.height);
+            if (n <= 420)
+            {
+                change_colour();
+                element.style.height = (n + 10) + "px";
+                element.style.width = (n + 10) + "px";
+            }
+            if (n > 420)
+            {
+                element.style.height = "200px";
+                element.style.width = "200px";
+            }
+        }
+        function deflate() {
+            var n = parseInt(document.getElementById("balloon").style.height);
+            if (n > 200)
+            {
+                element.style.height = (n - 5) + "px";
+                element.style.width = (n - 5) + "px";
+                reverse_colour();
+            }
+        }
+        function reverse_colour() {
+            if (element.style.backgroundColor == "red")
+            {
+                element.style.backgroundColor = "blue";
+            }
+            else if (element.style.backgroundColor == "green")
+            {
+                element.style.backgroundColor = "red";
+            }
+            else if (element.style.backgroundColor == "blue")
+            {
+                element.style.backgroundColor = "green";
+            }
+        }
+    </script>
+}
+</body>
+</html>

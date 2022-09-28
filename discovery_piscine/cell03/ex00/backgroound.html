@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backgroound</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+
+<body>
+    <button type="button" onclick="change_colour()">ooh so mysterious</button>
+    <script>
+        function change_colour() {
+            var x = Math.floor(Math.random() * 256); //math.floor rounds down
+            var y = Math.floor(Math.random() * 256); //math.random generates a random floating point within the range of 256
+            var z = Math.floor(Math.random() * 256);
+            var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+            document.body.style.background = bgColor;
+        }
+    </script>
+</body>
+</html>
