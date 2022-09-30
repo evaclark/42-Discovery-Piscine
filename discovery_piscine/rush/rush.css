@@ -1,0 +1,28 @@
+#person1 {
+    background-image: url("https://preview.redd.it/v742lscv89z41.jpg?auto=webp&s=29ce2a97a3eed4a892fd0c20366fc98db2bf63a5");
+}
+
+#person2 {
+    background-image: url("https://i.kym-cdn.com/entries/icons/mobile/000/035/557/Hi_Bingus.jpg");
+}
+
+.Name {
+    position: relative;
+    font-family: monospace;
+    font-size: 30px;
+    top: 50%;
+    left:30%;
+    color: papayawhip;
+}
+.person {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.info {
+    background-color: papayawhip;
+    height: 120vw;
+}

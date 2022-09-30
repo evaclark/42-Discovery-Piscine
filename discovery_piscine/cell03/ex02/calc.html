@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        body {
+            position: absolute;
+            margin-left: 25%;
+            margin-right: 25%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Calculator :)</h2>
+        <input type="text" id="left" name="left">
+        <select name="Operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right" name="right">
+        <input type="submit" value="Calculate!" onclick="calc_function()">
+    
+    <script>
+        setInterval(timer, 30000);
+
+        function timer() 
+        {
+            alert("Please use me ...");
+        }
+
+        function calc_function() 
+        {
+            var n1 = Number(document.getElementById("left").value);
+            var n2 = Number(document.getElementById("right").value);
+            var op = document.getElementById("operator").value;
+            
+            if (n1 < 0 || n2 < 0)
+            {
+                alert("Error :(");
+                return ;
+            }
+            if ((n1 == 0 || n2 == 0) && (op == "/" || op == "%"))
+            {
+                alert("It's over 9000!");
+                return ;
+            }
+            var result = eval('n1 + op + n2');
+            var end = eval(result);
+            alert(end);
+        }
+    </script>
+</body>
+</html>
