@@ -6,10 +6,6 @@
     background-image: url("https://i.kym-cdn.com/entries/icons/mobile/000/035/557/Hi_Bingus.jpg");
 }
 
-.home {
-    background-color: papayawhip;
-    height: 120vw;
-}
 .Name {
     position: relative;
     font-family: monospace;
@@ -64,4 +60,49 @@
 .info {
     background-color: papayawhip;
     height: 70vw;
+}
+
+.navbar {
+	position : fixed;
+	top : 0px;
+	left : 0px;
+	bottom : 0px;
+	background-color : var(--f-dark);
+	color : var(--f-light);
+	width : 100px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+
+.navbar>div {
+	width : 20px;
+	height : 50px;
+	background-position : center;
+	background-size: cover;
+	cursor : pointer;
+	filter : invert();
+	display: inline-block;
+	margin-block : 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar>div>div {
+	width : 20px;
+	position : relative;
+	bottom : 0px;
+	color : #000;
+	background-color: transparent;
+	opacity : 0;
+	transition : opacity 0.1s, bottom 0.1s;
+	padding : 10px;
+}
+
+:root {
+	--f-dark : pink;
+	--l-dark : blue;
+	--l-light : green;
+	--f-light : #FFFFB3;
 }

@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rush</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="rush.css">
+    <script src="rush.js"></script>
 </head>
 
 <body>
-    <div class="home" id="home">Welcome</div>
+    <div class="navbar">
+		<div onclick="goTo('person1')" class="fa fa-home">
+			<div>
+				Home
+			</div>
+		</div>
+		<div onclick="goTo('info1')" class="fa fa-info">
+			<div>
+				Team
+			</div>
+        </div>
+        <div onclick="goTo('person2')" class="fa fa-home">
+			<div>
+				Contact
+			</div>
+		</div>
+		<div onclick="goTo('info2')" class="fa fa-info">
+			<div>
+				Contact
+			</div>
+		</div>
+    </div>
+    
     <div class="person" id="person1">
         <div class="Name" id="name1">Porridge Cat: Lost in sauce</div>
     </div>
-    <div class="info" id="info">
+    <div class="info" id="info1">
         <div class="Resume" id="resume">About
             <p id="about">
                 Porridge cat is passionate about web development and has 5 years of experience in
@@ -42,7 +66,7 @@
     <div class="person" id="person2">
         <div class="Name" id="name2">Bingus: Hairless</div>
     </div>
-    <div class="info" id="info">
+    <div class="info" id="info2">
         <div class="Resume" id="resume">About
         <p id="about">
             Bingus is hairless and has a complex about that - he has created his own company to
