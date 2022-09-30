@@ -6,6 +6,10 @@
     background-image: url("https://i.kym-cdn.com/entries/icons/mobile/000/035/557/Hi_Bingus.jpg");
 }
 
+.home {
+    background-color: papayawhip;
+    height: 120vw;
+}
 .Name {
     position: relative;
     font-family: monospace;
@@ -22,7 +26,42 @@
     height: 70vh;
 }
 
+.Resume {
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    top: 10%;
+    color: black;                                                                                          
+}
+
+#about {
+    font-size: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#list1 {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 20%;
+}
+
+#list2 {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 20%;
+}
+
+.Contact {
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    top: 5%;
+    color: black;  
+}
 .info {
     background-color: papayawhip;
-    height: 120vw;
+    height: 70vw;
 }
